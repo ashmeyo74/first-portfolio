@@ -1,16 +1,21 @@
+.contentWrap {
+width: 150vh;
+overflow:hidden;
+margin: 5vh 25vh;
+background-color:rgb(194, 194, 216);
+display:inline-block;
+}
 
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size:medium;
-    width:80%;
-    height:20%;
-    margin:100px auto;
     overflow:hidden;
 }
 
 header {
     background-color:#353B41;
     height: 40px;
+    width:100%;
     text-align:center;
     color: #fff;
     font-size:xx-large;
@@ -18,6 +23,7 @@ header {
     padding: 20px;
 }
 
+/* left column start */
 h1 {
     margin-top:2px;
     padding:10px 10px;
@@ -25,69 +31,117 @@ h1 {
     color:#ffffff;
 }
 
+
 .mainDescriptor {
-    width: 40%;
+    width: 50%;
     height:fit-content;
-    margin-left:10%;
+    margin:80px 30px;
     background-color:#d6dfe9;
     text-align:center;
-    overflow:hidden;
     float:left;
 }
-
 
 
 .developer {
     width:350px;
-    height:500px;
-    padding:30px;
+    height:400px;
+    margin:30px;
     float:left;
+    border:#814878;
+    border-width:4px;
+    border-style: solid;
+    object-fit: cover;
 }
 
 .divIntroduction {
     color:#09253f;
-    margin: 5%;
+    margin:20px;
+    margin-top:15%;
     text-align:justify;
 }
+
 
 h2 {
     font-size:medium;
     text-align:center;
 }
+/* left column end */
 
-.mainIntroduction {
-    text-align:justify;
+
+
+/* right column start */
+h3 {
+    font-size: 32px;
+    color:#ffffff;
 }
+
 
 .examplesHeader {
-    width: 40%;
-    height:fit-content;
-    margin: 10em 10% auto auto;
-    background-color:#475e79;
+    width: 45%;
+    height:60px;
     text-align:center;
-    float:right;
+    margin: 5em 5px auto 53%;
+    background-color:#475e79;
+    vertical-align: center;
+    padding-top:5px;
+    padding-bottom:20px;
+    border-radius:20px;
+    line-height:10px;
 }
 
-
+/* these are the circles under 'examples' */
 .portfolioExamples {
-    width: 120px;
-    height: 120px;
-    margin: 20px;
+    width: 240px;
+    height: 240px;
+    margin: 10px auto 10px 35px;
     text-align:center;
     background-color: #09253f;
     border-radius:50%;
     color:#fff;
-    float:inline-start
+    float:inline-start;
+    flex:wrap;
+    overflow:hidden;
+    transition: 0.8s;
+    opacity:0.7;
 }
 
+.portfolioExamples:hover {
+    opacity:1;
+    border-radius:20%;
+    transition: 0.8s;
+    overflow:hidden;
+}
+
+.portfolioImage {
+    height: 240px; 
+    width: 240px;
+    transition: 0.8s;
+    border-radius:50%;
+    object-fit:cover;
+
+}
+
+.portfolioImage:hover {
+    opacity:1;
+    transition: 0.8s;
+    border-radius:20%;
+    overflow:hidden;
+
+}
+/* right column end  */
 
 footer {
     background-color:#353B41;
-    height: 20px;
+    height:10px;
+    width:146vh;
     text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     font-size:xx-large;
     font-weight: bolder;
+    margin-top:54vh;
     padding: 20px;
-    margin-top:46%;
+    position:fixed;
 }
