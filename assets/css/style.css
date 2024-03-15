@@ -1,15 +1,19 @@
 .contentWrap {
 width: 150vh;
-overflow:hidden;
 margin: 5vh 25vh;
 background-color:rgb(194, 194, 216);
-display:inline-block;
+display:flex;
+flex-direction: column;
+align-items: center;
+overflow:hidden;
+position:relative;
 }
+
 
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size:medium;
-    overflow:hidden;
+
 }
 
 header {
@@ -21,32 +25,75 @@ header {
     font-size:xx-large;
     font-weight: bolder;
     padding: 20px;
+    position:relative;
 }
 
-/* left column start */
+.buttonSelectors {
+    background-color: #353B41;
+    width:100px;
+    height:fit-content;
+    display:flex;
+    flex-direction:column;
+    align-items: left;
+    position:sticky;
+    float:left;
+    left:88%;
+    top:0px;
+}
+
+.button {
+    background-color: #353B41;
+    width:100px;
+    height:250px;
+    border:#000;
+    color:#fff;
+    font-size:18px;
+    padding-left:20px;
+    font-weight:bold;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    border: #353B41 solid 5pt;
+}
+
+.button:hover {
+    background-color: #c8d9e9;
+    transition: 0.6s;
+    color:#000;
+}
+
+/* Developer divs start */
 h1 {
-    margin-top:2px;
+    margin-top:auto;
+    width:97%;
     padding:10px 10px;
     background-color: #92a0af;
     color:#ffffff;
+    border-bottom: solid #6d7a88 10px;
+    border-left: solid #6d7a88 5px;
+    border-right: solid rgb(183, 200, 218) 5px;
+    position:relative;
 }
 
 
 .mainDescriptor {
-    width: 50%;
+    width: 70%;
     height:fit-content;
     margin:80px 30px;
     background-color:#d6dfe9;
+    border-bottom: solid #546479 10px;
+    border-left: solid #73869c 5px;
+    border-right: solid #73869c 5px;
     text-align:center;
-    float:left;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
 }
 
 
 .developer {
     width:350px;
     height:400px;
-    margin:30px;
-    float:left;
     border:#814878;
     border-width:4px;
     border-style: solid;
@@ -56,7 +103,7 @@ h1 {
 .divIntroduction {
     color:#09253f;
     margin:20px;
-    margin-top:15%;
+    max-width:40%;
     text-align:justify;
 }
 
@@ -64,12 +111,13 @@ h1 {
 h2 {
     font-size:medium;
     text-align:center;
+    position:relative;
 }
-/* left column end */
+
+/* developer divs end */
 
 
-
-/* right column start */
+/* Portfolio examples start */
 h3 {
     font-size: 32px;
     color:#ffffff;
@@ -80,29 +128,38 @@ h3 {
     width: 45%;
     height:60px;
     text-align:center;
-    margin: 5em 5px auto 53%;
-    background-color:#475e79;
+    margin: auto;
+    background-color:#18141bee;
     vertical-align: center;
     padding-top:5px;
     padding-bottom:20px;
     border-radius:20px;
     line-height:10px;
+    position:relative;
+}
+
+
+.examplesDivWrap {
+    background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 2%;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    overflow:hidden;
+    position:relative;
 }
 
 /* these are the circles under 'examples' */
 .portfolioExamples {
     width: 240px;
-    height: 240px;
-    margin: 10px auto 10px 35px;
     text-align:center;
-    background-color: #09253f;
+    background-color: #3b1f42;
     border-radius:50%;
     color:#fff;
-    float:inline-start;
-    flex:wrap;
     overflow:hidden;
     transition: 0.8s;
     opacity:0.7;
+    border: #09253f 3px solid;
 }
 
 .portfolioExamples:hover {
@@ -128,20 +185,45 @@ h3 {
     overflow:hidden;
 
 }
-/* right column end  */
+
+/* Portfolio examples end */
 
 footer {
     background-color:#353B41;
-    height:10px;
+    height:80px;
     width:146vh;
-    text-align:center;
-    display: flex;
-    justify-content: center;
+    display:flex;
+    flex-direction: row;
     align-items: center;
     color: #fff;
-    font-size:xx-large;
-    font-weight: bolder;
-    margin-top:54vh;
+    font-size:x-large;
+    margin-top:5vh;
     padding: 20px;
-    position:fixed;
+    position:absolute inline;
+    vertical-align: middle;
+}
+
+b {
+    color:#a465be
+}
+
+.contact {
+    position:relative;
+    margin-left: 20px;
+    align-content: center;
+}
+
+.git {
+    height: 25px;
+    width: 25px;
+    filter:invert(100%)
+}
+
+.contactText {
+    position:inline;
+    padding-right:50px;
+    margin-left:40px;
+    margin-right:50px;
+    font-size: 3.5em;
+    border-right: solid 3pt #000;
 }

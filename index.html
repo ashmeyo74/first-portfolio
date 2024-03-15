@@ -5,14 +5,24 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+
+        <!-- On click, these will scroll to the corresponding sections. -->
+        <div class="buttonSelectors">
+          <a href="#contentWrap"><button class="button"> BACK TO TOP </button></a>
+          <a href="#mainDescriptor"><button class="button"> ABOUT ME </button></a>
+          <a href="#examplesHeader"><button class="button"> EXAMPLES </button></a>
+          <a href="#contactText"><button class="button">CONTACT</button></a>
+        </div>
+
     <!-- div contentWrap added to center everything and keep things fixed in place.-->
-    <div class="contentWrap">
+    <div id="contentWrap" class="contentWrap">
         <header>
    <title> Portfolio</title>
         ASHLEY YOUNG PORTFOLIO
     </header>
-  <div class="mainDescriptor">
-    <h1> The Developer</h1>
+    
+  <div id="mainDescriptor" class="mainDescriptor">
+    <h1> THE DEVELOPER</h1>
 
 <img class="developer" src="./assets/images/Snapchat-758353330.jpg" alt="A picture of the developer.">
     <div class="divIntroduction"><h2>Hello!</h2>
@@ -22,11 +32,13 @@
     <br></div>
   </div>
 
-<div class="examplesHeader">
+<div id="examplesHeader" class="examplesHeader">
 <h3> Examples of My Work </h3>
 </div>
 
   <!-- 'examplesDivWrap' centers  the portfolio circles-->
+  <div class="examplesDivWrap">
+
 <div class="portfolioExamples">
   <a href="https://ashmeyo74.github.io/horiseon-repo-edit/"><img class="portfolioImage" src="/assets/images/horiseon.png"  alt="A screenshot of a website edit. Clicking on this leads to a webpage." ></a></div>
  
@@ -37,9 +49,17 @@
     <a href="/assets/images/20220210_190452.jpg"><img class="portfolioImage" src="/assets/images/20220210_190452.jpg"  alt="A picture of a very good boy. Clicking on this leads to a bigger upload of the image." ></a></div>
 
 <div class="portfolioExamples">
-  <a href="https://www.w3schools.com/"><img class="portfolioImage" src="/assets/images/w3schools.png"  alt="A screenshot of a very helpful coding website (w3schools). Clicking on this leads to a webpage." ></a></div>
+  <a href="https://www.w3schools.com/"><img class="portfolioImage" src="/assets/images/w3schools.png"  alt="A screenshot of a very helpful coding website (w3schools). Clicking on this leads to a webpage." ></a></div></div>
   
-  <footer> test </footer></div>
+  <footer> 
+    <div id="contactText" class="contactText">CONTACT</div>
+    <p class="contact">✉ <b>EMAIL:</b> ashmeyo74@gmail.com<br> 
+      ☎ <b>PHONE:</b>  (xxx) xxx - xxxx <br> 
+      <img class="git" src="/assets/images/git.png"> <b>GITHUB: </b> ashmeyo74 </p> 
+    
+   
+    
+    </footer></div>
 </body>
 
 
