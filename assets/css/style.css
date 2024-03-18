@@ -1,5 +1,6 @@
 .contentWrap {
-width: 150vh;
+width: 100%;
+max-width:130vh;
 margin: 5vh 25vh;
 background-color:rgb(194, 194, 216);
 display:flex;
@@ -28,26 +29,32 @@ header {
     position:relative;
 }
 
+
+/* Side scroll selectors */
 .buttonSelectors {
     background-color: #353B41;
-    width:100px;
+    width:80px;
+    max-width:80px;
     height:fit-content;
     display:flex;
     flex-direction:column;
     align-items: left;
     position:sticky;
     float:left;
-    left:88%;
+    margin-left:200px;
     top:0px;
 }
 
 .button {
     background-color: #353B41;
-    width:100px;
-    height:250px;
+    width:80px;
+    max-width:80px;
+    height:25vh;
+
     border:#000;
     color:#fff;
-    font-size:18px;
+    font-size:16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-left:20px;
     font-weight:bold;
     writing-mode: vertical-lr;
@@ -222,7 +229,7 @@ b {
 .contactText {
     position:inline;
     padding-right:50px;
-    margin-left:40px;
+    margin-left:100px;
     margin-right:50px;
     font-size: 3.5em;
     border-right: solid 3pt #000;
